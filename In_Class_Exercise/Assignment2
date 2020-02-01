@@ -1,0 +1,457 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "Assignment2.ipynb",
+      "provenance": [],
+      "authorship_tag": "ABX9TyO8C52p8z1ngQIWKoDBL89l",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/ettubrute-INFO/Rahul_INFO5731_Spring2020/blob/master/In_Class_Exercise/Assignment2\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "sArrHq8e64M_",
+        "colab_type": "text"
+      },
+      "source": [
+        "Problem #1"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "izIqQV3v67L-",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 51
+        },
+        "outputId": "3f5c573a-1809-4bb6-c105-362325ce744e"
+      },
+      "source": [
+        "x = int(input(\"Input a numerical value from 0 to 6: \"))\n",
+        "\n",
+        "if x == 0:\n",
+        "    print(\"Today's Sunday\")\n",
+        "elif x == 1:\n",
+        "    print(\"Today's Monday\")\n",
+        "elif x == 2:\n",
+        "    print(\"Today's Tuesday\")\n",
+        "elif x == 3:\n",
+        "    print(\"Today's Wednesday\")\n",
+        "elif x == 4:\n",
+        "    print(\"Today's Thursday\")\n",
+        "elif x == 5:\n",
+        "    print(\"Today's Friday\")\n",
+        "elif x == 6:\n",
+        "    print(\"Today's Saturday\")\n",
+        "else:\n",
+        "    print(\"You entered an invalid value\")"
+      ],
+      "execution_count": 1,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Input a numerical value from 0 to 6: 4\n",
+            "Today's Thursday\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "isP5Ytr77Rq9",
+        "colab_type": "text"
+      },
+      "source": [
+        "Problem #2"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "NSFxw0HQ7dIr",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 34
+        },
+        "outputId": "623592f7-82f5-486b-cb3e-44ca734ca824"
+      },
+      "source": [
+        "import math\n",
+        "y = 6\n",
+        "z = 8\n",
+        "\n",
+        "print(\"The hypotenuse of triangle with length \", y, \" and length \", z, \" is\", math.sqrt(y**2 + z**2))"
+      ],
+      "execution_count": 2,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "The hypotenuse of triangle with length  6  and length  8  is 10.0\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "tq-2w6t97q01",
+        "colab_type": "text"
+      },
+      "source": [
+        "Problem #3"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "ed7wKjwh7x-j",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 34
+        },
+        "outputId": "24c42d07-077b-4ffc-9553-03dfee07b5f8"
+      },
+      "source": [
+        "a = 6\n",
+        "b = 9\n",
+        "c = 10\n",
+        "\n",
+        "if a**2 + b**2 == c**2:\n",
+        "    print(True)\n",
+        "else:\n",
+        "    print(False)"
+      ],
+      "execution_count": 3,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "False\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "7mH3kf3Q72Qc",
+        "colab_type": "text"
+      },
+      "source": [
+        "Problem #4"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "2b-Nu5jc75jx",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 221
+        },
+        "outputId": "1fa6d23f-fca0-4be7-e6cf-9c8be0e86833"
+      },
+      "source": [
+        "for month in [\"January\", \"February\", \"March\", \"April\", \"May\", \"June\", \"July\", \"August\", \"September\", \"October\",\n",
+        "              \"November\", \"December\"]:\n",
+        "    fact = \"One of the months of the year is \" + month\n",
+        "    print(fact)"
+      ],
+      "execution_count": 4,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "One of the months of the year is January\n",
+            "One of the months of the year is February\n",
+            "One of the months of the year is March\n",
+            "One of the months of the year is April\n",
+            "One of the months of the year is May\n",
+            "One of the months of the year is June\n",
+            "One of the months of the year is July\n",
+            "One of the months of the year is August\n",
+            "One of the months of the year is September\n",
+            "One of the months of the year is October\n",
+            "One of the months of the year is November\n",
+            "One of the months of the year is December\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "RweTm6mm7-AG",
+        "colab_type": "text"
+      },
+      "source": [
+        "Problem #5"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "6tCfDWLv8Gxx",
+        "colab_type": "text"
+      },
+      "source": [
+        "(A)"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "fneF-Ujs8I30",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 34
+        },
+        "outputId": "8ce5f511-dca9-417a-904a-54fb8f7d9a15"
+      },
+      "source": [
+        "def listTotal(sumList):\n",
+        "    total = 0\n",
+        "    for j in sumList:\n",
+        "        total = total + j\n",
+        "    return total\n",
+        "\n",
+        "print(listTotal([2, 10, 32, 3, 66, 17, 42, 99, 20]))"
+      ],
+      "execution_count": 5,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "291\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "TIHneUsN8Lxo",
+        "colab_type": "text"
+      },
+      "source": [
+        "(B)"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "SWDRcrK18M8d",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 34
+        },
+        "outputId": "6d10df19-5156-48a9-d057-01a51e8597ab"
+      },
+      "source": [
+        "def listProduct(prodList):\n",
+        "   if len(prodList) == 1:\n",
+        "        return prodList[0]\n",
+        "   else:\n",
+        "        return prodList[0] * listProduct(prodList[1:])\n",
+        "\n",
+        "print(listProduct([2, 10, 32, 3, 66, 17, 42, 99, 20]))"
+      ],
+      "execution_count": 6,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "179146598400\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "FjiaYC9a8Q41",
+        "colab_type": "text"
+      },
+      "source": [
+        "Problem #6"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "xYI41bYL9iyL",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "source": [
+        "import turtle\n",
+        "\n",
+        "window = turtle.Screen()\n",
+        "window.bgcolor(\"Red\")\n",
+        "window.title(\"Rahul\")\n",
+        "\n",
+        "rahul = turtle.Turtle()\n",
+        "rahul.color(\"Black\")\n",
+        "rahul.pensize(7)\n",
+        "\n",
+        "for i in [0, 1, 2]:\n",
+        "    rahul.forward(50)\n",
+        "    rahul.left(120)\n",
+        "\n",
+        "rahul.right(90)\n",
+        "rahul.forward(100)\n",
+        "\n",
+        "for i in [0, 1, 2, 3, 4, 5, 6]:\n",
+        "    rahul.forward(60)\n",
+        "    rahul.left(60)\n",
+        "\n",
+        "window.mainloop()"
+      ],
+      "execution_count": 0,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "cruiF8d69zCS",
+        "colab_type": "text"
+      },
+      "source": [
+        "Problem #7"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "ia4iL7_d9_aj",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "source": [
+        "import turtle\n",
+        "\n",
+        "window = turtle.Screen()\n",
+        "window.bgcolor(\"Red\")\n",
+        "window.title(\"Rahul\")\n",
+        "\n",
+        "rahul = turtle.Turtle()\n",
+        "rahul.color(\"Black\")\n",
+        "rahul.pensize(7)\n",
+        "\n",
+        "rahul.forward(100)\n",
+        "rahul.left(160)\n",
+        "\n",
+        "rahul.forward(100)\n",
+        "rahul.left(-43)\n",
+        "\n",
+        "rahul.forward(100)\n",
+        "rahul.left(270)\n",
+        "\n",
+        "rahul.forward(100)\n",
+        "rahul.left(-97)\n",
+        "\n",
+        "rahul.forward(100)\n",
+        "rahul.left(-43)\n",
+        "\n",
+        "rahul.forward(100)\n",
+        "rahul.left(200)\n",
+        "\n",
+        "rahul.forward(100)\n",
+        "rahul.left(-940)\n",
+        "\n",
+        "rahul.forward(100)\n",
+        "rahul.left(17)\n",
+        "\n",
+        "rahul.forward(100)\n",
+        "rahul.left(-86)\n",
+        "\n",
+        "rahul.forward(100)\n",
+        "\n",
+        "window.mainloop()"
+      ],
+      "execution_count": 0,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "Yeo6rTJH-NXR",
+        "colab_type": "text"
+      },
+      "source": [
+        "Problem #8"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "ft8ebMIz-O_3",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 34
+        },
+        "outputId": "244b5c6d-2a1c-4afd-bf17-860743a1140a"
+      },
+      "source": [
+        "x = range(1, 1000)\n",
+        "i = 0\n",
+        "evenNumber = 0\n",
+        "discard = 0\n",
+        "\n",
+        "while(i < len(x)):\n",
+        "    if i%2 == 1:\n",
+        "        evenNumber += 1\n",
+        "    else:\n",
+        "        discard += 1\n",
+        "\n",
+        "    i += 1\n",
+        "\n",
+        "print(\"Number of even digits from 1:1000: \", evenNumber)"
+      ],
+      "execution_count": 12,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Number of even digits from 1:1000:  499\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    }
+  ]
+}
